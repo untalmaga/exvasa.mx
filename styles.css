@@ -1,0 +1,207 @@
+/* REAUSABLE STUFF */
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h3 {
+    
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+    line-height: 1.5;
+    padding: 0 10%;
+} 
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0 10%;
+    font-weight: 300;
+}
+
+
+.btn-clear {
+    border: 2px solid #27b897;
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.btn-full {
+    
+    background-color: #27b897;
+}
+
+.section-title {
+    padding: 3rem 1rem 0;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.divider {
+        display: block;
+        height: 2px;
+        background-color: #27b897;
+        content: " ";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+}
+
+
+
+
+
+/* NAV BAR*/
+
+
+.logo {
+    width: 6rem;
+}
+
+.nav-item {
+    padding-right: 3.5rem;
+    font-weight: 200;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid #27b897;
+}
+
+.navbar { padding: 0 0 0.2rem;}
+
+
+
+/* HERO*/
+
+
+
+.fullscreen-bg {
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-header {
+    margin: 0 3% 5% 0;
+    width: 10rem; 
+    border-radius: 1rem;
+}
+
+.hero-h1 {
+    margin: 20% 0; 
+}
+
+.btn-header-1 {
+    margin-right: 2 rem;
+}
+
+.btn-header-2 {
+    margin-left: 2 rem;
+}
+
+/* ABOUT US */
+
+
+#about-us {
+    background-color: #f4f4f4;
+    padding-bottom: 3rem;
+}
+
+
+.about-us-col {
+    height: 350px;
+    text-align: center;
+    line-height: 350px;
+
+}
+
+.about-us-icon {
+    font-size: 10rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: #27b897;
+
+}
+
+.about-us-text {
+    font-size: 1.2rem;
+    padding: 0 20%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+
+}
+
+.about-us-col-1 {
+    padding-left: 10%;
+}
+
+.about-us-col-2 {
+    padding-right: 10%; 
+}
+
+/* TESTIMONIALS SECTION */
+
+#testimonials {
+    text-align: center;
+    background-color: #27b897;
+    color: #fff;
+   
+}
+
+.testimonial-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 1.2rem;
+}
+
+#press {
+    background-color: #27b897;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 12%;
+    margin: 1.2rem 1.2rem 1.2rem;
+}
+
+.carousel-item {
+    padding: 7% 10%;
+}
+
+.testimonial-text {
+    font-weight: 300;
+}
+  

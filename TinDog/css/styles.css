@@ -1,0 +1,193 @@
+/* REUSABLE and GENERAL STUFF */
+
+.container-fluid {
+    padding: 3% 10% 7%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+    padding: 0 10%;
+}
+
+/* NAV BAR */
+
+.nav-item {
+    padding-right: 3.5rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.navbar { padding: 0 0 4.5rem;}
+
+
+/* TITLE SECTION */
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: "Ubuntu"
+}
+
+#title {
+    background-color: #ff4c68;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #FFF;
+    padding: 3rem 1rem 3rem 0;
+}
+
+.btn-header {
+    margin: 0 3% 5% 0;
+}
+
+.title-img {
+    width: 60%;
+    transform: rotate(25deg);
+    margin-left: 2rem;
+    position: absolute;
+    right: 30%;
+}
+
+/* FEATURE SECTION */
+
+#features { 
+    background-color: #fff;
+    position: relative;
+
+}
+
+.icon-feature {
+    color: #ef8172;
+    transition: all 0.5s;
+    padding-bottom: 2rem;
+}
+
+.icon-feature:hover {
+    font-size: 5rem;
+    color: #ff4c68
+}
+
+.col-feature {
+    text-align: center;
+    padding: 5%;
+    margin: 5% 0; 
+}
+
+.col-feature p {
+    color: #8f8f8f;
+}
+
+/* TESTIMONIALS SECTION */
+
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+   
+}
+
+.testimonial-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 1.2rem;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 12%;
+    margin: 1.2rem 1.2rem 1.2rem;
+}
+
+.carousel-item {
+    padding: 7% 10%;
+}
+
+
+/*  SECTION PRICING  */
+
+#pricing {
+    padding: 10%;
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 4% 2%; 
+}
+
+.price {
+    font-size: 2.5rem;
+}
+
+/* CALL TO ACTION */
+
+#cta {
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: center;
+}
+
+#cta-h3 {
+    padding: 3rem 0; 
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+
+/* FOOTER SECTION */
+
+#footer {
+    text-align: center;
+}
+
+#social-icons {
+    padding: 3rem 0 1rem;
+}
+
+#social-icons i {
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+#footer p {
+    color: #8f8f8f;
+    font-size: 0.8rem;
+}
+/*    MEDIA QUERYS     */
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-img {
+        position: static;
+        transform: rotate(0);
+    }
+}
