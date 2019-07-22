@@ -1,4 +1,12 @@
 /* REAUSABLE STUFF */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+    
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -6,7 +14,17 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+
 }
+.clearfix { zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 h3 {
     
@@ -32,6 +50,24 @@ p {
     font-weight: 300;
 }
 
+ul {
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+/*--------------------------------------------- */
+/*           REUSABLE COMPONENTS                */
+/*--------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+
+.box {
+    padding: 1%;
+}
 
 .btn-clear {
     border: 2px solid #27b897;
@@ -55,6 +91,14 @@ p {
     font-weight: 300;
 }
 
+.section-text {
+    font-size: 1.2rem;
+    padding: 0 5%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
 .divider {
         display: block;
         height: 2px;
@@ -69,7 +113,9 @@ p {
 
 
 
-/* NAV BAR*/
+/*--------------------------------------------- */
+/*                   NAV BAR                    */
+/*--------------------------------------------- */
 
 
 .logo {
@@ -89,7 +135,9 @@ p {
 
 
 
-/* HERO*/
+/*--------------------------------------------- */
+/*                  HERO                        */
+/*--------------------------------------------- */
 
 
 
@@ -129,11 +177,13 @@ p {
     margin-left: 2 rem;
 }
 
-/* ABOUT US */
+/*--------------------------------------------- */
+/*                      ABOUT US                */
+/*--------------------------------------------- */
 
 
 #about-us {
-    background-color: #f4f4f4;
+    background-color: #fff;
     padding-bottom: 3rem;
 }
 
@@ -146,7 +196,8 @@ p {
 }
 
 .about-us-icon {
-    font-size: 10rem;
+    height: 20rem;
+    width: 20rem;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -156,22 +207,66 @@ p {
 
 .about-us-text {
     font-size: 1.2rem;
-    padding: 0 20%;
+    padding: 0 5%;
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
-
 }
 
-.about-us-col-1 {
-    padding-left: 10%;
+
+
+
+/*--------------------------------------------- */
+/*                  SOLUCIONES                  */
+/*--------------------------------------------- */
+
+.soluciones {
+    padding: 0;
+}
+
+.soluciones-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.soluciones-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.soluciones-img {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.soluciones-img img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.soluciones-img img:hover {
+   -webkit-transform: scale(1.03);
+   transform: scale(1.03);
+    opacity: 1;
 }
 
 .about-us-col-2 {
     padding-right: 10%; 
 }
 
-/* TESTIMONIALS SECTION */
+/*--------------------------------------------- */
+/*                  TESTIMONIOS                 */
+/*--------------------------------------------- */
 
 #testimonials {
     text-align: center;
@@ -184,17 +279,6 @@ p {
     width: 10%;
     border-radius: 100%;
     margin: 1.2rem;
-}
-
-#press {
-    background-color: #27b897;
-    text-align: center;
-    padding-bottom: 3%;
-}
-
-.press-logo {
-    width: 12%;
-    margin: 1.2rem 1.2rem 1.2rem;
 }
 
 .carousel-item {
