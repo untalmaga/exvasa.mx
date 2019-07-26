@@ -109,6 +109,16 @@ ul {
         margin-top: 30px;
 }
 
+.divider-white {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
 
 
 
@@ -285,7 +295,51 @@ ul {
     padding: 7% 10%;
 }
 
-.testimonial-text {
+  
+.carousel-item h2 {
+    font-size: 2rem;
     font-weight: 300;
 }
-  
+
+.texto-nuestros-clientes {
+    padding: 10% 0 0;
+}
+
+/*--------------------------------------------- */
+/*                   CONTACTO                   */
+/*--------------------------------------------- */
+
+.contact-2 {
+    padding-top: 3rem
+}
+
+.contact-form-header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-box {
+    padding-bottom: 1.5rem;
+}
+
+.form-input {
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+.ubicaciones ul {
+    list-style-type: none;
+}
