@@ -159,6 +159,7 @@ ul {
     left: 0;
     overflow: hidden;
     z-index: -100;
+    position: relative;
 }
 
 .fullscreen-bg__video {
@@ -179,13 +180,27 @@ ul {
     margin: 20% 0; 
 }
 
+.btn-header-1,
+.btn-header-2 {
+    border: 0 none;
+    background-color: #27b897;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    width: 15rem;
+    text-transform: uppercase;
+    
+
+}
+
 .btn-header-1 {
-    margin-right: 2 rem;
+    left: 33%;
 }
 
 .btn-header-2 {
-    margin-left: 2 rem;
+   left: 53%;
 }
+
 
 /*--------------------------------------------- */
 /*                      ABOUT US                */
@@ -309,6 +324,10 @@ ul {
 /*                   CONTACTO                   */
 /*--------------------------------------------- */
 
+#contact {
+    padding-bottom: 3rem;
+}
+
 .contact-2 {
     padding-top: 3rem
 }
@@ -336,7 +355,7 @@ select,
 textarea {
     width: 100%;
     padding: 7px;
-    border-radius: 3px;
+    border-radius: 10px;
     border: 1px solid #ccc;
 }
 
@@ -346,6 +365,12 @@ textarea {
 
 .ubicaciones ul {
     list-style-type: none;
+    text-align: center;
+}
+
+.ubicaciones h4 {
+    padding-bottom: 1.2rem;
+    text-align: center;
 }
 
 .form-box input {
@@ -355,6 +380,15 @@ textarea {
 .form-text {
     padding-left: 2.5rem; 
 }
+
+.btn-contact-us {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #27b897;
+    text-transform: uppercase;
+    border: 0 none;
+}
+
 
 
 /*--------------------------------------------- */
@@ -430,12 +464,13 @@ footer {
     color: #ddd;
 }
 
-.footer li a {
+.footer li a:link, 
+.footer li a:visited {
     font-size: 0.8rem;
+    color: #ddd;
 }
 
-.footer-nav li a:hover, 
-.footer-nav li a:visited {
+.footer-nav li a:hover {
     color: #27b897;
     transition: color 0.6s;
 
@@ -463,8 +498,6 @@ footer {
     font-weight: 300;
     font-size: 1.5rem;
     color: #ddd;
-    padding-bottom: 2.5rem;
-
+    padding-bottom: 1rem;
 }
-
 
