@@ -59,7 +59,7 @@ ul {
 /*--------------------------------------------- */
 
 .row {
-    max-width: 1140px;
+    max-width: 1300px;
     margin: 0 auto;
     
 }
@@ -318,6 +318,10 @@ ul {
     text-transform: uppercase;
 }
 
+#contact .row {
+    max-width: 90%;
+}
+
 .form-box {
     padding-bottom: 1.5rem;
 }
@@ -343,3 +347,124 @@ textarea {
 .ubicaciones ul {
     list-style-type: none;
 }
+
+.form-box input {
+    border-radius: 10px;
+}
+
+.form-text {
+    padding-left: 2.5rem; 
+}
+
+
+/*--------------------------------------------- */
+/*                   FOOTER                     */
+/*--------------------------------------------- */
+
+
+footer {
+    background-color: #333;
+    padding: 40px;
+    font-size: 75%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right
+}
+
+.footer-nav li, 
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.footer-nav li:last-child, 
+.social-links li:last-child {
+    margin: 0;
+}
+
+.footer-nav li a:link, 
+.footer-nav li a:visited, 
+.social-links li a:link, 
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.footer-nav li a:hover, 
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link, 
+.social-links li a:visited {
+    font-size: 140%;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s
+}
+
+.fa-facebook-f:hover { color: #3b5998 }
+.fa-twitter:hover { color: #00aced }
+.fa-instagram:hover { color: #517fa4 }
+
+.fa-heart{color:red;}
+
+#footer-ds a:visited,
+#footer-ds a:link {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.footer li a {
+    font-size: 0.8rem;
+}
+
+.footer-nav li a:hover, 
+.footer-nav li a:visited {
+    color: #27b897;
+    transition: color 0.6s;
+
+
+}
+
+
+#footer-ds a:hover { 
+    color: #00aced;
+    transition: color 0.64ºs;
+}
+
+
+.footer-text{
+    font-size: 0.5rem;
+    color: #888;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+#footer-ds {
+    font-family: 'Dawning of a New Day', cursive;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #ddd;
+    padding-bottom: 2.5rem;
+
+}
+
+
