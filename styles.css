@@ -496,8 +496,10 @@ footer {
     font-family: 'Dawning of a New Day', cursive;
     text-align: center;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ddd;
     padding-bottom: 1rem;
 }
+
+.ds-heart {color: #ED1944}
 
