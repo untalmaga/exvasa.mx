@@ -147,6 +147,10 @@ ul {
 /*                   Servicios                  */
 /*--------------------------------------------- */
 
+#descripcion-servicios {
+    padding: 7% 0;
+}
+
 .texto-servicios {
     padding: 10% 0 0;
     text-align: center;
@@ -155,8 +159,20 @@ ul {
 /*--------------------------------------------- */
 /*            SHOWCASE SERVICIOS                */
 /*--------------------------------------------- */
+#showcase-servicios {
+    background-color: #27b897
+}
 
 
+.img-servicios img {
+    padding-top:10%;
+    width: 90%;
+    height: 90%;
+}
+
+.desc-servicios p{
+    padding-top: 30%;
+}
 
 
 /*--------------------------------------------- */
