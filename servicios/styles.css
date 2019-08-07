@@ -160,7 +160,8 @@ ul {
 /*            SHOWCASE SERVICIOS                */
 /*--------------------------------------------- */
 #showcase-servicios {
-    background-color: #27b897
+    background-color: #27b897;
+    padding: 10% 0; 
 }
 
 

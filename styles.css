@@ -70,7 +70,7 @@ ul {
 }
 
 .btn-clear {
-    border: 2px solid #27b897;
+    border: 2px solid #204acf;
     background-color: #fff;
     color: #000;
     
@@ -78,7 +78,7 @@ ul {
 
 .btn-full {
     
-    background-color: #27b897;
+    background-color: #204acf;
 }
 
 .section-title {
@@ -102,7 +102,7 @@ ul {
 .divider {
         display: block;
         height: 2px;
-        background-color: #27b897;
+        background-color: #204acf;
         content: " ";
         width: 100px;
         margin: 0 auto;
@@ -138,7 +138,7 @@ ul {
 }
 
 .nav-item a:hover {
-    border-bottom: 2px solid #27b897;
+    border-bottom: 2px solid #204acf;
 }
 
 .navbar { padding: 0 0 0.2rem;}
@@ -183,11 +183,12 @@ ul {
 .btn-header-1,
 .btn-header-2 {
     border: 0 none;
-    background-color: #27b897;
-    border-radius: 10px;
+    background-color: #204acf;
+    border-radius: 2px;
     position: absolute;
     top: 70%;
     width: 15rem;
+    height: 3.5rem;
     text-transform: uppercase;
     
 
@@ -226,7 +227,7 @@ ul {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    color: #27b897;
+    color: #204acf;
 
 }
 
@@ -295,7 +296,7 @@ ul {
 
 #testimonials {
     text-align: center;
-    background-color: #27b897;
+    background-color: #204acf;
     color: #fff;
    
 }
@@ -384,7 +385,7 @@ textarea {
 .btn-contact-us {
     width: 100%;
     border-radius: 10px;
-    background-color: #27b897;
+    background-color: #204acf;
     text-transform: uppercase;
     border: 0 none;
 }
@@ -471,7 +472,7 @@ footer {
 }
 
 .footer-nav li a:hover {
-    color: #27b897;
+    color: #204acf;
     transition: color 0.6s;
 
 
