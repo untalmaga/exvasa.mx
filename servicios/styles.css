@@ -1,3 +1,4 @@
+/* REAUSABLE STUFF */
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +59,7 @@ ul {
 /*--------------------------------------------- */
 
 .row {
-    max-width: 1300px;
+    max-width: 90%;
     margin: 0 auto;
     
 }
@@ -68,17 +69,8 @@ ul {
     padding: 1%;
 }
 
-.btn-clear {
-    border: 2px solid #27b897;
-    background-color: #fff;
-    color: #000;
-    
-}
+section {padding: 80px 0;}
 
-.btn-full {
-    
-    background-color: #27b897;
-}
 
 .section-title {
     padding: 3rem 1rem 0;
@@ -101,11 +93,11 @@ ul {
 .divider {
         display: block;
         height: 2px;
-        background-color: #27b897;
+        background-color: #ff1e03;
         content: " ";
         width: 100px;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-bottom: 2rem;
 }
 
 .divider-white {
@@ -115,10 +107,8 @@ ul {
     content: " ";
     width: 100px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-bottom: 2rem;
 }
-
-
 
 
 
@@ -160,7 +150,7 @@ ul {
 /*            SHOWCASE SERVICIOS                */
 /*--------------------------------------------- */
 #showcase-servicios {
-    background-color: #27b897;
+    background-color: #fff;
     padding: 10% 0; 
 }
 
@@ -171,9 +161,17 @@ ul {
     height: 90%;
 }
 
-.desc-servicios p{
-    padding-top: 30%;
+.desc-servicios h3 {
+    text-align: center;
+    padding-top: 20%;
+    color: #204acf
 }
+
+.desc-servicios p{
+    padding-top: 5%;
+    text-align: center;
+}
+
 
 
 /*--------------------------------------------- */

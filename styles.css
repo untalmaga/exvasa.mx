@@ -244,6 +244,30 @@ input[type=submit]:active {
     
 }
 
+/* Sticky Nav*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .navbar li a:link, 
+.sticky .navbar li a:visited {
+    padding: 16px 0;
+    color: #555;
+    
+}
+
+.sticky .navbar { margin-top: 18px; }
+
+.sticky .logo { display: none;}
+.sticky .logo-black {display: block; }
+
 
 /*--------------------------------------------- */
 /*                  HERO                        */
@@ -445,6 +469,10 @@ textarea {
     height: 100px;
 }
 
+.ubicaciones h4 {
+    color: #204acf;
+}
+
 .ubicaciones ul {
     list-style-type: none;
     text-align: center;
@@ -454,6 +482,8 @@ textarea {
     padding-bottom: 1.2rem;
     text-align: center;
 }
+
+
 
 .form-box input {
     border-radius: 10px;
