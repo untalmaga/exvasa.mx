@@ -270,47 +270,64 @@ input[type=submit]:active {
 .sticky .logo { display: none;}
 .sticky .logo-black {display: block; }
 
-
 /*--------------------------------------------- */
-/*                   Servicios                  */
+/*                 CIUDADES                     */
 /*--------------------------------------------- */
+/*    SALTILLO        */
+#ciudades { padding: 0; }
 
-#descripcion-servicios {
-    padding: 7% 0;
+
+.cd {
+    max-width: 100%;
+    padding: 0;
+    height: 500px;
 }
 
-.texto-servicios {
-    padding: 10% 0 0;
+.saltillo, 
+.cdmx {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/1-saltillo-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    /* background-attachment: fixed; */
+}
+
+.cdmx {  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/zocalo-cdmx.jpg);  
+}
+
+.saltillo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/1-saltillo-1.png);
+}
+
+.ciudad  {
+    color: #fff;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    
+}
+#estado {font-size: 1rem;}
+
+.info-ciudad {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    position: absolute;
     text-align: center;
-}
-
-/*--------------------------------------------- */
-/*            SHOWCASE SERVICIOS                */
-/*--------------------------------------------- */
-#showcase-servicios {
-    background-color: #fff;
-    padding: 10% 0; 
+    bottom: 5%;
+    left: 10%;
+    border: 1px solid #fff;
+    padding: 1%;
 }
 
 
-.img-servicios img {
-    padding-top:10%;
-    width: 90%;
-    height: 90%;
-}
-
-.desc-servicios h3 {
-    text-align: center;
-    padding-top: 20%;
-    color: #204acf
-}
-
-.desc-servicios p{
-    padding-top: 5%;
-    text-align: center;
-}
-
-
+/*        CDMX        */
 
 /*--------------------------------------------- */
 /*                   FOOTER                     */
@@ -392,7 +409,7 @@ footer {
 }
 
 .footer-nav li a:hover {
-    color: #27b897;
+    color: #204acf;
     transition: color 0.6s;
 
 
