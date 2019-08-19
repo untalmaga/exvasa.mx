@@ -327,7 +327,18 @@ input[type=submit]:active {
 }
 
 
-/*        CDMX        */
+/*--------------------------------------------- */
+/*                 CONTACTO                     */
+/*--------------------------------------------- */
+#formulario {
+   background-color: #204acf;
+}
+
+#formulario h3,
+.form-box {
+    text-align: center;
+    margin-left: auto
+}
 
 /*--------------------------------------------- */
 /*                   FOOTER                     */
