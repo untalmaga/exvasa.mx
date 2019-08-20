@@ -431,7 +431,15 @@ header {
 /*--------------------------------------------- */
 
 #contact {
-    padding-bottom: 3rem;
+    padding-bottom: 5%;
+    
+}
+
+.img-contacto {
+    background-image: url(img/backgroun-contacto.png);
+    background-size: cover;
+    background-position: center;
+    height: 3rem;
 }
 
 .contact-2 {
