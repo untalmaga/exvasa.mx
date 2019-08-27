@@ -1,299 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Express Valle de Saltillo</title>
-    <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Lato:300,400&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="resources/styles.css">
-    
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Lato:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="resources/styles.css" />
+  </head>
+  <body>
     <!-- HERO IMAGE / VIDEO -->
     <section id="hero">
-            <header>
-                    
-                    <div class="container-fluid">
-                    <nav class="navbar sticky-top navbar-expand-lg ">
-                            <img class="navbar-brand logo" src="resources/img/Logo-Blanco-Exvasa.png"></img>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                        
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="servicios">Servicios</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="#">Cotizador</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="contacto">Contacto</a>
-                                </li>
-                            </ul>
-                            </div>
-                    </nav>
+      <header>
+        <div class="container-fluid">
+          <nav class="navbar sticky-top navbar-expand-lg">
+            <img
+              class="navbar-brand logo"
+              src="resources/img/Logo-Blanco-Exvasa.png"
+            />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-        </div> 
-                    
-                    <div class="hero-text-box">
-                        <h1>Tu solución en logistica <br> Excelencia en logística</h1>
-                        <a class="btn btn-full btn-header-1" href="#"> Contáctanos </a>
-                        <a class="btn btn-full btn-header-2" href="#"> Cotizador </a>
-                    </div>
-                    
-                    
-                
-                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"
+                    >Inicio <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pricer">Cotizador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
 
-            </header>
-    </section> 
+        <div class="hero-text-box">
+          <h1>
+            Tu solución en logistica <br />
+            Excelencia en logística
+          </h1>
+          <a class="btn btn-full btn-header-1" href="#"> Contáctanos </a>
+          <a class="btn btn-full btn-header-2" href="#"> Cotizador </a>
+        </div>
+      </header>
+    </section>
 
     <section id="about-us" class="js--section-features">
       <div class="container-fluid">
-        <h2 class="section-title"> Adoptamos la filosofía del "justo a tiempo"</h2>
+        <h2 class="section-title">
+          Adoptamos la filosofía del "justo a tiempo"
+        </h2>
         <span class="divider"></span>
         <div class="row about-us-row">
-            <div class="col-lg-6 about-us-col about-us-col-1">
-                <img class="about-us-icon" src="resources/img/Cajita_Abierta.png"></img>
-            </div>
-            <div class="col-lg-6  about-us-col about-us-col-2">
-                <p class="section-text">
-                        Exvasa cuenta con mas de 50 años de experiencia en la industria del transporte 
-                        terrestre, teniendo como prioridad la satisfacción de nuestros clientes por medio
-                        de sociedades estratégicas.
-                        <br><br>
-                        Somos una compañía dinámica, flexible y versátil que se adecua a todos los sistemas 
-                        de calidad, adoptando estas normas para ser competitivos bajo la filosofía de 
-                        "Justo a Tiempo" nuestras reglas se rigen bajo normas de certificación y en 
-                        progreso de CT-PAT.
-                        
-                </p>
-                
-            </div>
+          <div class="col-lg-6 about-us-col about-us-col-1">
+            <img class="about-us-icon" src="resources/img/Cajita_Abierta.png" />
+          </div>
+          <div class="col-lg-6  about-us-col about-us-col-2">
+            <p class="section-text">
+              Exvasa cuenta con mas de 50 años de experiencia en la industria
+              del transporte terrestre, teniendo como prioridad la satisfacción
+              de nuestros clientes por medio de sociedades estratégicas.
+              <br /><br />
+              Somos una compañía dinámica, flexible y versátil que se adecua a
+              todos los sistemas de calidad, adoptando estas normas para ser
+              competitivos bajo la filosofía de "Justo a Tiempo" nuestras reglas
+              se rigen bajo normas de certificación y en progreso de CT-PAT.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    
-
     <section class="soluciones">
-        <ul class="soluciones-showcase clearfix">
-        
-            <li>
-                <figure class="soluciones-img">
-                    <img src="resources/img/64825.jpg" >
-                </figure>
-            </li>
-            <li>
-                <figure class="soluciones-img">
-                    <img src="resources/img/64825.jpg" >
-                </figure>
-            </li>
-            <li>
-                <figure class="soluciones-img">
-                    <img src="resources/img/64825.jpg" >
-                </figure>
-            </li>
-            <li>
-                <figure class="soluciones-img">
-                    <img src="resources/img/64825.jpg" >
-                </figure>
-            </li>
-            
-            
-        </ul>
-        <ul class="soluciones-showcase clearfix">
-        
-            <li>
-                <figure class="soluciones-img">
-                    <img src="resources/img/64825.jpg" >
-                </figure>
-            </li>
-            <li>
-                <figure class="soluciones-img">
-                    <img src="resources/img/64825.jpg" >
-                </figure>
-            </li>
-            <li>
-                <figure class="soluciones-img">
-                    <img src="resources/img/64825.jpg" >
-                </figure>
-            </li>
-            <li>
-                <figure class="soluciones-img">
-                    <img src="resources/img/64825.jpg">
-                </figure>
-            </li>
-            
-            
-        </ul>
-    
+      <ul class="soluciones-showcase clearfix">
+        <li>
+          <figure class="soluciones-img">
+            <img src="resources/img/64825.jpg" />
+          </figure>
+        </li>
+        <li>
+          <figure class="soluciones-img">
+            <img src="resources/img/64825.jpg" />
+          </figure>
+        </li>
+        <li>
+          <figure class="soluciones-img">
+            <img src="resources/img/64825.jpg" />
+          </figure>
+        </li>
+        <li>
+          <figure class="soluciones-img">
+            <img src="resources/img/64825.jpg" />
+          </figure>
+        </li>
+      </ul>
+      <ul class="soluciones-showcase clearfix">
+        <li>
+          <figure class="soluciones-img">
+            <img src="resources/img/64825.jpg" />
+          </figure>
+        </li>
+        <li>
+          <figure class="soluciones-img">
+            <img src="resources/img/64825.jpg" />
+          </figure>
+        </li>
+        <li>
+          <figure class="soluciones-img">
+            <img src="resources/img/64825.jpg" />
+          </figure>
+        </li>
+        <li>
+          <figure class="soluciones-img">
+            <img src="resources/img/64825.jpg" />
+          </figure>
+        </li>
+      </ul>
     </section>
 
-
     <section id="testimonials">
-        <h2 class="section-title"> Nuestros Clientes</h2>
-        <span class="divider-white"></span>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 texto-nuestros-clientes">
-                    <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue mauris 
-                            rhoncus aenean vel elit. Dignissim suspendisse in est ante in nibh mauris. <br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue mauris 
-                            rhoncus aenean vel elit. Dignissim suspendisse in est ante in nibh mauris.
-                    </p>
-                </div>
-            </div>
+      <h2 class="section-title">Nuestros Clientes</h2>
+      <span class="divider-white"></span>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 texto-nuestros-clientes">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu
+              cursus vitae congue mauris rhoncus aenean vel elit. Dignissim
+              suspendisse in est ante in nibh mauris. <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu
+              cursus vitae congue mauris rhoncus aenean vel elit. Dignissim
+              suspendisse in est ante in nibh mauris.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-                <img class="testimonial-img" src="resources/img/6.jpg" alt="ranchero-profile">
-                <em>Ranchito, Tierrozo</em>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h2>
+            <img
+              class="testimonial-img"
+              src="resources/img/6.jpg"
+              alt="ranchero-profile"
+            />
+            <em>Ranchito, Tierrozo</em>
+          </div>
+          <div class="carousel-item">
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h2>
+            <img
+              class="testimonial-img"
+              src="resources/img/2.jpg"
+              alt="lego-profile"
+            />
+            <em>Dabadu, Dabadabadu</em>
+          </div>
+          <div class="carousel-item">
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua..
+            </h2>
+            <img
+              class="testimonial-img"
+              src="resources/img/8.jpg"
+              alt="lego-profile"
+            />
+            <em>Fondo de Bikini</em>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCION DE CONTACTO  -->
+
+    <section id="contact">
+      <div class="row contact-2">
+        <div class="col-lg-5">
+          <iframe
+            id="ubicacion1"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.7612403273897!2d-100.37164808457119!3d25.679208283674285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629618fd598e2b%3A0xa1c35f57b2e34240!2sAv.+Anillo+Periferico+409%2C+Rinc%C3%B3n+de+Las+Colinas%2C+64633+Monterrey%2C+N.L.!5e0!3m2!1ses-419!2smx!4v1564011219277!5m2!1ses-419!2smx"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+          <!-- <iframe id="ubicacion2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.938167857155!2d-87.06726868464867!3d20.63137698621502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c344388019a353%3A0xae2213a4cbf2bf49!2sMamita&#39;s+Beach+Club!5e0!3m2!1ses-419!2smx!4v1564011603602!5m2!1ses-419!2smx" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        </div>
+        <div class="col-lg-4 ">
+          <h3 class="contact-form-header">Oficinas</h3>
+          <div class="row">
+            <div class="col-lg-6 ubicaciones">
+              <h4>SALTILLO</h4>
+              <ul>
+                <li>Blvd. de convenciones No. 201</li>
+                <li>Fracc. Puerta de Ote</li>
+                <li>C.P. 25010</li>
+                <li>Saltillo, Coahuila. Mex</li>
+                <li>Tel. (844) 413-1313.</li>
+              </ul>
             </div>
-            <div class="carousel-item">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-                <img class="testimonial-img" src="resources/img/2.jpg" alt="lego-profile">
-                <em>Dabadu, Dabadabadu</em>
-            </div>
-            <div class="carousel-item">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</h2>
-                <img class="testimonial-img" src="resources/img/8.jpg" alt="lego-profile">
-                <em>Fondo de Bikini</em>
+            <div class="col-lg-6 ubicaciones">
+              <h4>CDMX</h4>
+              <ul>
+                <li>Poniente 122 No. 705</li>
+                <li>Col. Industrial Vallejo</li>
+                <li>Delagación Azcapotzalco</li>
+                <li>México, D.F</li>
+                <li>C.P. 02300</li>
+                <li>Tel. (55)5587-8977</li>
+              </ul>
             </div>
           </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-    
-      </section>
-
-      <!-- SECCION DE CONTACTO  -->
-
-      <section id="contact">
-        
-        
-        <div class="row contact-2"> 
-            <div class="col-lg-5">
-                    <iframe id="ubicacion1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.7612403273897!2d-100.37164808457119!3d25.679208283674285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629618fd598e2b%3A0xa1c35f57b2e34240!2sAv.+Anillo+Periferico+409%2C+Rinc%C3%B3n+de+Las+Colinas%2C+64633+Monterrey%2C+N.L.!5e0!3m2!1ses-419!2smx!4v1564011219277!5m2!1ses-419!2smx" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    <!-- <iframe id="ubicacion2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.938167857155!2d-87.06726868464867!3d20.63137698621502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c344388019a353%3A0xae2213a4cbf2bf49!2sMamita&#39;s+Beach+Club!5e0!3m2!1ses-419!2smx!4v1564011603602!5m2!1ses-419!2smx" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-            </div>
-            <div class="col-lg-4 ">
-                    <h3 class="contact-form-header">Oficinas</h3>
-                    <div class="row">
-                        <div class="col-lg-6 ubicaciones">
-                                <h4>SALTILLO</h4>
-                                <ul>
-                                    <li>Blvd. de convenciones No. 201</li>
-                                    <li>Fracc. Puerta de  Ote</li>
-                                    <li>C.P. 25010</li>
-                                    <li>Saltillo, Coahuila. Mex</li>
-                                    <li>Tel. (844) 413-1313.</li>
-                                </ul>
-                        </div>
-                        <div class="col-lg-6 ubicaciones">
-                                <h4>CDMX</h4>
-                                <ul>
-                                    <li>Poniente 122 No. 705</li>
-                                    <li>Col. Industrial Vallejo</li>
-                                    <li>Delagación Azcapotzalco</li>
-                                    <li>México, D.F</li>
-                                    <li>C.P. 02300</li>
-                                    <li>Tel. (55)5587-8977</li>
-                                </ul>
-                            </div>
-                    </div>
-                    <div class="row img-contacto">
-                        
-                    </div>
-            </div>
-            <div class="col-lg-3">
-                <h3 class="contact-form-header">Contáctanos</h3>
-                <div class="row form-box">                    
-                        <input  class="form-input" type="text" name="name" id="name" placeholder="Tu nombre" required>                    
-                </div>
-                <div class="row form-box">
-                        <input class="form-input" type="email" name="email" id="email" placeholder="Tu e-mail" required>       
-                </div>
-                <div class="row form-box">            
-                        <textarea class="form-input" name="message" placeholder="Tu Mensaje"></textarea>             
-                </div>
-                <div class="row form-box">            
-                        <a class="btn btn-ghost btn-contact-us" href="#"> ENVIAR </a>          
-                </div>
-            </div>
-            
-            
+          <div class="row img-contacto"></div>
         </div>
-      </section>
+        <div class="col-lg-3">
+          <h3 class="contact-form-header">Contáctanos</h3>
+          <div class="row form-box">
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+          <div class="row form-box">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Tu e-mail"
+              required
+            />
+          </div>
+          <div class="row form-box">
+            <textarea
+              class="form-input"
+              name="message"
+              placeholder="Tu Mensaje"
+            ></textarea>
+          </div>
+          <div class="row form-box">
+            <a class="btn btn-ghost btn-contact-us" href="#"> ENVIAR </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <footer>
-            <div class="row">
-                <div class=" col-lg-6">
-                    <ul class="footer-nav">
-                        <li><a href="#"> Inicio  </a></li>
-                        <li><a href="#"> Servicios</a></li>
-                        <li><a href="#"> Cotizador</a></li>
-                        <li><a href="#"> Contacto</a></li>
-                    </ul>
-                        
-                </div>
-                
-                <div class="col-lg-6">
-                    <ul class="social-links">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
+    <footer>
+      <div class="row">
+        <div class=" col-lg-6">
+          <ul class="footer-nav">
+            <li><a href="#"> Inicio </a></li>
+            <li><a href="#"> Servicios</a></li>
+            <li><a href="#"> Cotizador</a></li>
+            <li><a href="#"> Contacto</a></li>
+          </ul>
+        </div>
 
-                    <h4  id="footer-ds">hecho con <i class="fas fa-heart ds-heart"></i> por <a id=""href="www.digitalsides.com">digital sides</a></h4>
+        <div class="col-lg-6">
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4 id="footer-ds">
+            hecho con <i class="fas fa-heart ds-heart"></i> por
+            <a id="" href="www.digitalsides.com">digital sides</a>
+          </h4>
 
-                    <h4 class="footer-text" >Copyright &copy; 2019  Express Valle de Saltillo. S.A. de C.V.</h4>
+          <h4 class="footer-text">
+            Copyright &copy; 2019 Express Valle de Saltillo. S.A. de C.V.
+          </h4>
+        </div>
+      </div>
+    </footer>
 
-                    
-                </div>
-            </div>
-                
-        </footer>
-
-
-
-
-
-
-
-
-          <script src="functions.js"></script>
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <script src="functions.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
