@@ -1,18 +1,62 @@
-* Large screens ----------- */
+/* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
 
 }
 
+@media only screen and (max-width : 1444px) {
+    .ubicaciones ul {
+        font-size: 0.9rem;
+    }
+}
+
+
 /* Big tablet to 1200px (widths smaller than 1140px row - from 1024 to 1200 px*/
 @media only screen and (max-width: 1224px) {
-    .section-title {
-        font-size: 200px; 
+    
+    
+    
+    h2 { font-size: 2.2rem; }
+
+    p { font-size: 1.1rem; }
+
+    /* CONTACT US */
+
+    #contact .row {
+        max-width: 100%;
     }
+
+    .ubicaciones ul {
+        font-size: 0.8rem;
+    }
+
+    .ubicaciones h4 { font-size: 1.4rem; }
+
+    .contact-form-header { font-size: 1.8rem; }
+
+    .hero-text-box {
+        padding-left: 10%;
+    }
+
+
 }
 
 /* Small tablet to big tablet - from 768 to 1023px */
 @media only screen and (max-width: 1023px) {
+    .hero-text-box h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text-box { padding-left: 15%;}
+
+
+
+
+
 }
+
+
+
+
 
 /* Small phones to small tablets - from 481 to 767 px */
 @media only screen and (max-width: 767px) {
