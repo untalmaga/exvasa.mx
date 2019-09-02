@@ -235,6 +235,11 @@ input[type="submit"]:active {
   border-bottom: 2px solid #204acf;
 }
 
+.navbar-toggler-icon {
+  color: #fff;
+  
+}
+
 /* Sticky Nav*/
 
 .sticky {
@@ -280,9 +285,9 @@ header {
       from(rgba(0, 0, 0, 0.7)),
       to(rgba(0, 0, 0, 0.7))
     ),
-    url(img/hero-meh-2.png);
+    url(img/hero-azul.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(img/hero-meh-2.png);
+    url(img/hero-azul.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -422,7 +427,7 @@ header {
 #contact {
   padding-bottom: 5%;
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
-    url(img/bg-contact-us.png);
+    url(img/bg-contact-uuuuus.png);
   background-size: cover;
   background-position: center;
 }
