@@ -1,0 +1,202 @@
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+
+}
+
+@media only screen and (max-width : 1444px) {
+    .ubicaciones ul {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Big tablet to 1200px (widths smaller than 1140px row - from 1024 to 1200 px*/
+@media only screen and (max-width: 1224px) {
+    
+    
+    
+    h2 { font-size: 2.2rem; }
+
+    p { font-size: 1.1rem; }
+
+    /* CONTACT US */
+
+    #contact .row {
+        max-width: 100%;
+    }
+
+    .ubicaciones ul {
+        font-size: 0.8rem;
+    }
+
+    .ubicaciones h4 { font-size: 1.4rem; }
+
+    .contact-form-header { font-size: 1.8rem; }
+
+    .hero-text-box {
+        padding-left: 10%;
+    }
+
+
+}
+
+/* Small tablet to big tablet - from 768 to 1023px */
+
+
+@media only screen and (max-width: 1023px) {
+    html { font-size: 14px; }
+    
+    .hero-text-box h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text-box { padding-left: 18%; }
+}
+
+
+
+
+/* Small phones to small tablets - from 912 to 767 px */
+@media only screen and (max-width: 912px) {
+    html { font-size: 13px; }
+
+    /*   HERO   */
+    
+    .hero-text-box { 
+       margin-left: 22%;
+    }
+
+    .hero-text-box h1 {
+        font-size: 3rem;
+    }
+
+    .btn-header {
+        margin-top: 5%; 
+    }
+
+    .btn-header-1 {
+        margin-left: 10%;
+    }
+
+
+   .section-text {
+       padding-bottom: 10%;
+   } 
+
+
+   /* ABOUT US */
+
+   #about-us {
+       height: 900px;
+   }
+
+   .about-us-icon {
+       padding-bottom: 7%;
+   }
+
+   /*   SOLUCIONES   */
+
+   .soluciones-showcase li {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    /*   CONTACT   */
+
+    #contact, 
+    .contact-2 {
+        padding-top: 0;
+    }
+
+    .mapa {
+        padding: 0 0 10% 0; 
+        height: 60vh;
+    }
+
+    .cuadro-ubicaciones {
+        padding-top: 3%;
+        padding-bottom: 10%;
+    }  
+
+    .contact-form-header {
+        font-size: 300%;
+    } 
+
+    .ciudad {
+        font-size: 3rem;
+    }
+
+    /* CONTACT FORM */
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 7px;
+        border-radius: 10px;
+        border: 1px solid rgb(114, 114, 114);
+    }
+
+    /* FOOTER  */
+    
+    .footer-nav {
+        font-size: 150%;
+    } 
+
+    .social-links {
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .footer-1-row {
+        padding-bottom: 3%;
+    }
+
+
+}
+
+
+
+
+
+
+/* Small phones to small tablets - from 481 to 767 px */
+@media only screen and (max-width: 767px) {
+
+    .hero-text-box { 
+        margin-left: 55%;
+     }
+
+    .hero-text-box h1 {
+        font-size: 2.4rem;
+    }
+
+    .btn-header-1 {
+        margin-left: 2%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* Small phones to small tablets - from 481 to 767 px */
+@media only screen and (max-width: 767px) {
+}
+
+/* Small phones. From 0 to 480 px */ 
+@media only screen and (max-width: 480px) {
+}
