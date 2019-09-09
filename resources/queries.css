@@ -147,6 +147,7 @@
 
     .social-links {
         font-size: 150%;
+        text-align: center;
     }
 
     .footer-1-row {
@@ -163,7 +164,32 @@
 
 /* Small phones to small tablets - from 481 to 767 px */
 @media only screen and (max-width: 767px) {
+
+    .hero-text-box { 
+        margin-left: 55%;
+     }
+
+    .hero-text-box h1 {
+        font-size: 2.4rem;
+    }
+
+    .btn-header-1 {
+        margin-left: 2%;
+    }
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
 
 
 
