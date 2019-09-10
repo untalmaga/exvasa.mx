@@ -56,13 +56,30 @@ for (i = 0; i < inputs.length; i++) {
   });
 }
 
+function ajaxPost(form, callback) {
+  let url = form.action;
+  let xhr = new XMLHttpRequest();
+  let params = [].filter
+    .call(form.elements, el => el.type != "radio" || el.checked == true)
+    .filter(el => !!el.name)
+    .filter(el => !el.disabled)
+    .map(el => encodeURIComponent(el.name) + "=" + encodeURIComponent(el.value))
+    .join("&"); //Then join all the strings by &
+  xhr.open("POST", url);
+
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhr.setRequestHeader("Access-Control-Allow-Headers", "*");
+  xhr.onload = callback.bind(xhr);
+  xhr.send(params);
+}
+
 window.addEventListener("load", function() {
   document.getElementById("form").addEventListener("submit", function(e) {
-    e.preventDefault();
     if (grecaptcha.getResponse() == "") {
       document.getElementById("captcha-fail").style.display = "block";
     } else {
       document.getElementById("captcha-fail").style.display = "none";
+      ajaxPost(this, res => console.log(res));
     }
   });
 });
