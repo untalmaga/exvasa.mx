@@ -63,12 +63,11 @@ function ajaxPost(form, callback) {
     .call(form.elements, el => el.type != "radio" || el.checked == true)
     .filter(el => !!el.name)
     .filter(el => !el.disabled)
+    .filter(el => el.value)
     .map(el => encodeURIComponent(el.name) + "=" + encodeURIComponent(el.value))
     .join("&"); //Then join all the strings by &
   xhr.open("POST", url);
-
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhr.setRequestHeader("Access-Control-Allow-Headers", "*");
   xhr.onload = callback.bind(xhr);
   xhr.send(params);
 }

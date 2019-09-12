@@ -72,7 +72,7 @@
             id="form"
             class="my-form"
             method="POST"
-            action="http://localhost:3000/submit"
+            action="https://mailapi.rlopez0689.now.sh/submit"
             onsubmit="return false;"
           >
             <p>¿El articulo viaja en tarima?</p>
@@ -167,6 +167,7 @@
                 <textarea
                   class="inputform"
                   id="description"
+                  name="description"
                   required
                 ></textarea>
               </div>
@@ -177,7 +178,7 @@
                   type="radio"
                   id="yes_insurance"
                   name="insurance"
-                  value="yes_insurance"
+                  value="si"
                   required
                 />
                 <label for="yes_insurance">Si</label>
@@ -186,7 +187,7 @@
                   type="radio"
                   id="no_insurance"
                   name="insurance"
-                  value="no_insurance"
+                  value="no"
                   required
                 />
                 <label for="no_insurance">No</label>
@@ -198,7 +199,7 @@
                   type="radio"
                   id="yes_collect"
                   name="collect"
-                  value="yes_collect"
+                  value="si"
                   required
                 />
                 <label for="yes_collect">Si</label>
@@ -207,7 +208,7 @@
                   type="radio"
                   id="no_collect"
                   name="collect"
-                  value="no_collect"
+                  value="no"
                   required
                 />
                 <label for="no_collect">No</label>
@@ -230,7 +231,7 @@
                   type="radio"
                   id="yes_deliver"
                   name="deliver"
-                  value="yes_deliver"
+                  value="si"
                   required
                 />
                 <label for="yes_deliver">Si</label>
@@ -239,18 +240,18 @@
                   type="radio"
                   id="no_deliver"
                   name="deliver"
-                  value="no_deliver"
+                  value="no"
                   required
                 />
                 <label for="no_deliver">No</label>
               </div>
 
               <div class="form-row" id="deliver-cp">
-                <label for="deliver-collect">Código postal de entrega</label>
+                <label for="cp-deliver">Código postal de entrega</label>
                 <input
                   type="number"
-                  id="deliver-collect"
-                  name="deliver-collect"
+                  id="cp-deliver"
+                  name="cp-deliver"
                   class="inputform"
                   required
                 />
