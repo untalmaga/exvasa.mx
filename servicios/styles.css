@@ -293,15 +293,27 @@ input[type=submit]:active {
 }
 
 
+.row-showcase {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .img-servicios img {
-    padding-top:10%;
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    max-width: 450px;
+    display:block;
+    margin: 0 auto;
+    height: 85%;
+    border-radius: 48%;
+
 }
 
 .desc-servicios h3 {
     text-align: center;
-    padding-top: 20%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    
+    padding-top: 9%;
     color: #204acf
 }
 
