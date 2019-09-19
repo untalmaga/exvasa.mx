@@ -286,9 +286,9 @@ header {
       from(rgba(0, 0, 0, 0.7)),
       to(rgba(0, 0, 0, 0.7))
     ),
-    url(img/hero-azul.jpg);
+    url(img/Hero-inicio.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(img/hero-azul.jpg);
+    url(img/Hero-inicio.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -338,6 +338,7 @@ header {
   vertical-align: middle;
   text-align: center;
   color: #204acf;
+  border-radius: 50%;
 }
 
 .about-us-text {
