@@ -318,17 +318,17 @@ header {
 #about-us {
   background-color: #fff;
   padding: 5rem 0;
-  height: 950px;
+
 }
 
 .about-us-row {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .about-us-col {
-  height: 350px;
+  
   text-align: center;
-  line-height: 350px;
+  /* line-height: 350px; */
 }
 
 .about-us-icon {
@@ -360,6 +360,7 @@ header {
 .soluciones-showcase {
   list-style: none;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .soluciones-showcase li {
@@ -370,7 +371,7 @@ header {
 
 .soluciones-img {
   width: 100%;
-  height: 60%;
+
   margin: 0;
   overflow: hidden;
   background: #000;
@@ -395,9 +396,7 @@ header {
   opacity: 1;
 }
 
-.about-us-col-2 {
-  padding-right: 10%;
-}
+
 
 /*--------------------------------------------- */
 /*                  TESTIMONIOS                 */
@@ -407,7 +406,6 @@ header {
   text-align: center;
   background-color: #204acf;
   color: #fff;
-  margin-top: 15%;
 }
 
 .testimonial-img {
