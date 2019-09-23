@@ -4,7 +4,9 @@
 }
 
 @media only screen and (max-width : 1444px) {
-    
+    .ubicaciones ul {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -19,9 +21,7 @@
 
     /*  ABOUT US */
 
-
-
-
+   
 
 
 }
@@ -32,14 +32,6 @@
 @media only screen and (max-width: 1023px) {
     html { font-size: 14px; }
     
-
-    /* SERVICIOS */
-    .row-showcase {
-        max-width: 95%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     
 
     /* FOOOTER */
@@ -47,21 +39,6 @@
     .social-links {
         font-size: 1rem;
     }
-
-    .pos-1 { order: 1;}
-    .pos-2 { order: 2;}
-    .pos-3 { order: 4;}
-    .pos-4 { order: 3;}
-    .pos-5 { order: 5;}
-    .pos-6 { order: 6;}
-    .pos-7 { order: 8;}
-    .pos-8 { order: 7;}
-    .pos-9 { order: 9;}
-    .pos-10 { order: 10;}
-    .pos-11 { order: 12;}
-    .pos-12 { order: 11;}
-
-
 
 }
 
@@ -74,7 +51,11 @@
     
     html { font-size: 13px; }
 
-    
+    .section-title {
+        padding-top: 0;
+    }
+
+   
 
     /* FOOTER  */
     
@@ -106,6 +87,7 @@
     html { font-size: 12px; }
     
 
+
     /* FOOTER */
 
     .social-links,
@@ -113,15 +95,15 @@
         float: none;
         margin: 0 auto; 
     }
+    
+    .social-links {padding-bottom: 15px;}
+
 
     .footer-nav { 
         display: table; 
         margin: 0 auto;
-    padding-bottom: 4% 
+        padding-bottom: 4% 
     }
-
-    .social-links {padding-bottom: 15px;}
-
 }
 
 /* Small phones. From 0 to 480 px */ 
