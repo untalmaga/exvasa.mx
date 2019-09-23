@@ -50,11 +50,7 @@
 
     .contact-form-header { font-size: 1.8rem; }
 
-    .hero-text-box {
-        padding-left: 10%;
-    }
-
-
+    
 
 
 }
@@ -66,18 +62,10 @@
     html { font-size: 14px; }
     
     .hero-text-box h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
-    .hero-text-box { padding-left: 31%; }
-
-    .btn-header {
-        margin-top: 5%; 
-    }
-
-    .btn-header-1 {
-        margin-left: 10%;
-    }
+    
 
     /* ABOUT US */
     .about-us-icon {
@@ -146,24 +134,7 @@
         padding-top: 0;
     }
 
-    /*   HERO   */
     
-    .hero-text-box { 
-       margin-left: 9%;
-    }
-
-    .hero-text-box h1 {
-        font-size: 3rem;
-    }
-
-    .btn-header {
-        margin-top: 5%; 
-    }
-
-    .btn-header-1 {
-        margin-left: 10%;
-    }
-
 
    .section-text {
        padding-bottom: 10%;
@@ -261,22 +232,7 @@
 
     /*   HERO   */
     
-    .hero-text-box { 
-        margin-left: 50%;
-     }
- 
-     .hero-text-box h1 {
-         font-size: 2.2rem;
-     }
- 
-     .btn-header {
-         margin-top: 5%; 
-     }
- 
-     .btn-header-1 {
-         margin-left: 2%;
-     }
- 
+    
  
     .section-text {
         padding-bottom: 10%;
@@ -289,11 +245,15 @@
         float: none;
         margin: 0 auto; 
     }
+    
+    .social-links {padding-bottom: 15px;}
+
 
     .footer-nav { 
         display: table; 
         margin: 0 auto;
-    padding-bottom: 4% }
+        padding-bottom: 4% 
+    }
 }
 
 /* Small phones. From 0 to 480 px */ 
