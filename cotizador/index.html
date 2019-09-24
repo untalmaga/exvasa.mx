@@ -68,14 +68,32 @@
           <h2 class="section-title">
             Cotiza tu orden
           </h2>
-          <form id="form" class="my-form">
+          <form
+            id="form"
+            class="my-form"
+            method="POST"
+            action="https://mailapi.rlopez0689.now.sh/submit"
+            onsubmit="return false;"
+          >
             <p>¿El articulo viaja en tarima?</p>
 
             <div class="form-row legacy-form-row">
-              <input type="radio" id="yes_pallet" name="pallet" required />
+              <input
+                type="radio"
+                id="yes_pallet"
+                name="pallet"
+                value="yes_pallet"
+                required
+              />
               <label for="yes_pallet">Si</label>
 
-              <input type="radio" id="no_pallet" name="pallet" required />
+              <input
+                type="radio"
+                id="no_pallet"
+                name="pallet"
+                value="no_pallet"
+                required
+              />
               <label for="no_pallet">No</label>
             </div>
 
@@ -149,6 +167,7 @@
                 <textarea
                   class="inputform"
                   id="description"
+                  name="description"
                   required
                 ></textarea>
               </div>
@@ -159,6 +178,7 @@
                   type="radio"
                   id="yes_insurance"
                   name="insurance"
+                  value="si"
                   required
                 />
                 <label for="yes_insurance">Si</label>
@@ -167,6 +187,7 @@
                   type="radio"
                   id="no_insurance"
                   name="insurance"
+                  value="no"
                   required
                 />
                 <label for="no_insurance">No</label>
@@ -174,10 +195,22 @@
 
               <p>¿Recolección a domicilio?</p>
               <div class="form-row legacy-form-row">
-                <input type="radio" id="yes_collect" name="collect" required />
+                <input
+                  type="radio"
+                  id="yes_collect"
+                  name="collect"
+                  value="si"
+                  required
+                />
                 <label for="yes_collect">Si</label>
 
-                <input type="radio" id="no_collect" name="collect" required />
+                <input
+                  type="radio"
+                  id="no_collect"
+                  name="collect"
+                  value="no"
+                  required
+                />
                 <label for="no_collect">No</label>
               </div>
 
@@ -194,19 +227,31 @@
 
               <p>¿Entrega a domicilio?</p>
               <div class="form-row legacy-form-row">
-                <input type="radio" id="yes_deliver" name="deliver" required />
+                <input
+                  type="radio"
+                  id="yes_deliver"
+                  name="deliver"
+                  value="si"
+                  required
+                />
                 <label for="yes_deliver">Si</label>
 
-                <input type="radio" id="no_deliver" name="deliver" required />
+                <input
+                  type="radio"
+                  id="no_deliver"
+                  name="deliver"
+                  value="no"
+                  required
+                />
                 <label for="no_deliver">No</label>
               </div>
 
               <div class="form-row" id="deliver-cp">
-                <label for="deliver-collect">Código postal de entrega</label>
+                <label for="cp-deliver">Código postal de entrega</label>
                 <input
                   type="number"
-                  id="deliver-collect"
-                  name="deliver-collect"
+                  id="cp-deliver"
+                  name="cp-deliver"
                   class="inputform"
                   required
                 />
