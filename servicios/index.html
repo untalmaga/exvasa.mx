@@ -22,49 +22,45 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
   </head>
   <body>
     <!-- HERO IMAGE / VIDEO -->
     <section id="hero">
       <header>
-        <div class="container-fluid">
-          <nav class="navbar sticky-top navbar-expand-lg ">
-            <img
-              class="navbar-brand logo"
-              src="../resources/img/IMG-0246.PNG"
-            />
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+          <a href="/"><img class="navbar-brand logo" src="../resources/img/IMG-0246.PNG"/></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/"
-                    >Inicio <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="servicios">Servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cotizador</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../contacto">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+          <div class=" collapse sticky-top navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="../"
+                  >Inicio <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../cotizador/">Cotizador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
     </section>
 
@@ -90,11 +86,11 @@
     </section>
 
     <section id="showcase-servicios">
-      <div class="row">
-        <div class="col-lg-5 img-servicios">
-          <img src="../resources/img/image-example.png" />
+      <div class="row row-showcase">
+        <div class="col-lg-5 img-servicios pos-1">
+          <img src="../resources/img/Almacenamiento-serv.png" />
         </div>
-        <div class="col-lg-7 desc-servicios">
+        <div class="col-lg-7 desc-servicios pos-2">
           <h3>Servicio</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -104,8 +100,8 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-7 desc-servicios">
+      <div class="row row-showcase">
+        <div class="col-lg-7 desc-servicios pos-3">
           <h3>Servicio</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -114,15 +110,15 @@
             suspendisse in est ante in nibh mauris.
           </p>
         </div>
-        <div class="col-lg-5 img-servicios">
-          <img src="../resources/img/image-example.png" />
+        <div class="col-lg-5 img-servicios pos-4">
+          <img src="../resources/img/Asesoramiento-serv.png" />
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-5 img-servicios">
-          <img src="img/image-example.png" />
+      <div class="row row-showcase">
+        <div class="col-lg-5 img-servicios pos-5">
+          <img src="../resources/img/Dedicados-serv.png" />
         </div>
-        <div class="col-lg-7 desc-servicios">
+        <div class="col-lg-7 desc-servicios pos-6">
           <h3>Servicio</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -132,8 +128,8 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-7 desc-servicios">
+      <div class="row row-showcase">
+        <div class="col-lg-7 desc-servicios pos-7">
           <h3>Servicio</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -142,15 +138,15 @@
             suspendisse in est ante in nibh mauris.
           </p>
         </div>
-        <div class="col-lg-5 img-servicios">
-          <img src="../resources/img/image-example.png" />
+        <div class="col-lg-5 img-servicios pos-8">
+          <img src="../resources/img/Paqueteria-serv.png" />
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-5 img-servicios">
-          <img src="../resources/img/image-example.png" />
+      <div class="row row-showcase">
+        <div class="col-lg-5 img-servicios pos-9">
+          <img src="../resources/img/personal-serv.png" />
         </div>
-        <div class="col-lg-7 desc-servicios">
+        <div class="col-lg-7 desc-servicios pos-10">
           <h3>Servicio</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -158,6 +154,20 @@
             cursus vitae congue mauris rhoncus aenean vel elit. Dignissim
             suspendisse in est ante in nibh mauris.
           </p>
+        </div>
+      </div>
+      <div class="row row-showcase">
+        <div class="col-lg-7 desc-servicios pos-11">
+          <h3>Servicio</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu
+            cursus vitae congue mauris rhoncus aenean vel elit. Dignissim
+            suspendisse in est ante in nibh mauris.
+          </p>
+        </div>
+        <div class="col-lg-5 img-servicios pos-12">
+          <img src="../resources/img/renta-serv.png" />
         </div>
       </div>
     </section>
@@ -166,10 +176,10 @@
       <div class="row">
         <div class=" col-lg-6">
           <ul class="footer-nav">
-            <li><a href="#"> Inicio </a></li>
-            <li><a href="#"> Servicios</a></li>
-            <li><a href="#"> Cotizador</a></li>
-            <li><a href="#"> Contacto</a></li>
+            <li><a href="../"> Inicio </a></li>
+            <li><a href="../servicios"> Servicios</a></li>
+            <li><a href="../cotizador/"> Cotizador</a></li>
+            <li><a href="../contacto/"> Contacto</a></li>
           </ul>
         </div>
 

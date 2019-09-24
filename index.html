@@ -22,17 +22,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="resources/styles.css" />
+    <link rel="stylesheet" href="resources/queries.css" />
   </head>
   <body>
     <!-- HERO IMAGE / VIDEO -->
     <section id="hero">
       <header>
-        <div class="container-fluid">
-          <nav class="navbar sticky-top navbar-expand-lg">
-            <img
-              class="navbar-brand logo"
-              src="resources/img/Logo-Blanco-Exvasa.png"
-            />
+        
+          <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+            <a href="/"> <img class="navbar-brand logo" src="resources/img/Logo-Blanco-Exvasa.png"/></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -45,7 +43,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class=" collapse sticky-top navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link active" href="#"
@@ -56,7 +54,7 @@
                   <a class="nav-link" href="servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pricer">Cotizador</a>
+                  <a class="nav-link" href="cotizador/">Cotizador</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contacto">Contacto</a>
@@ -64,15 +62,18 @@
               </ul>
             </div>
           </nav>
-        </div>
+        
 
         <div class="hero-text-box">
           <h1>
             Tu solución en logistica <br />
             Excelencia en logística
           </h1>
-          <a class="btn btn-full btn-header-1" href="#"> Contáctanos </a>
-          <a class="btn btn-full btn-header-2" href="#"> Cotizador </a>
+          <div class="hero-buttons">
+            <a class="btn btn-full btn-header btn-header-1" href="#"> Contáctanos </a>
+            <a class="btn btn-full btn-header btn-header-2" href="#"> Cotizador </a>
+          </div>
+          
         </div>
       </header>
     </section>
@@ -85,10 +86,10 @@
         <span class="divider"></span>
         <div class="row about-us-row">
           <div class="col-lg-6 about-us-col about-us-col-1">
-            <img class="about-us-icon" src="resources/img/Cajita_Abierta.png" />
+            <img class="about-us-icon" src="resources/img/camion-about-us.png" />
           </div>
           <div class="col-lg-6  about-us-col about-us-col-2">
-            <p class="section-text">
+            <p class="about-us-text">
               Exvasa cuenta con mas de 50 años de experiencia en la industria
               del transporte terrestre, teniendo como prioridad la satisfacción
               de nuestros clientes por medio de sociedades estratégicas.
@@ -107,44 +108,34 @@
       <ul class="soluciones-showcase clearfix">
         <li>
           <figure class="soluciones-img">
-            <img src="resources/img/64825.jpg" />
+            <img src="resources/img/Almacenamiento.png" />
           </figure>
         </li>
         <li>
           <figure class="soluciones-img">
-            <img src="resources/img/64825.jpg" />
+            <img src="resources/img/Asesoramiento.png" />
           </figure>
         </li>
         <li>
           <figure class="soluciones-img">
-            <img src="resources/img/64825.jpg" />
-          </figure>
-        </li>
-        <li>
-          <figure class="soluciones-img">
-            <img src="resources/img/64825.jpg" />
+            <img src="resources/img/Dedicados.png" />
           </figure>
         </li>
       </ul>
       <ul class="soluciones-showcase clearfix">
         <li>
           <figure class="soluciones-img">
-            <img src="resources/img/64825.jpg" />
+              <img src="resources/img/Paqueteria.png" />
           </figure>
         </li>
         <li>
           <figure class="soluciones-img">
-            <img src="resources/img/64825.jpg" />
+            <img src="resources/img/personal.png" />
           </figure>
         </li>
         <li>
           <figure class="soluciones-img">
-            <img src="resources/img/64825.jpg" />
-          </figure>
-        </li>
-        <li>
-          <figure class="soluciones-img">
-            <img src="resources/img/64825.jpg" />
+            <img src="resources/img/renta.png" />
           </figure>
         </li>
       </ul>
@@ -247,7 +238,7 @@
 
     <section id="contact">
       <div class="row contact-2">
-        <div class="col-lg-5">
+        <div class="mapa col-lg-5 col-md-12">
           <iframe
             id="ubicacion1"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.7612403273897!2d-100.37164808457119!3d25.679208283674285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629618fd598e2b%3A0xa1c35f57b2e34240!2sAv.+Anillo+Periferico+409%2C+Rinc%C3%B3n+de+Las+Colinas%2C+64633+Monterrey%2C+N.L.!5e0!3m2!1ses-419!2smx!4v1564011219277!5m2!1ses-419!2smx"
@@ -259,11 +250,11 @@
           ></iframe>
           <!-- <iframe id="ubicacion2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.938167857155!2d-87.06726868464867!3d20.63137698621502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c344388019a353%3A0xae2213a4cbf2bf49!2sMamita&#39;s+Beach+Club!5e0!3m2!1ses-419!2smx!4v1564011603602!5m2!1ses-419!2smx" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
         </div>
-        <div class="col-lg-4 ">
+        <div class="col-lg-4 col-md-12">
           <h3 class="contact-form-header">Oficinas</h3>
-          <div class="row">
-            <div class="col-lg-6 ubicaciones">
-              <h4>SALTILLO</h4>
+          <div class="row cuadro-ubicaciones">
+            <div class="col-lg-6 col-md-6 col-sm-6 ubicaciones">
+              <h4 class="ciudad">SALTILLO</h4>
               <ul>
                 <li>Blvd. de convenciones No. 201</li>
                 <li>Fracc. Puerta de Ote</li>
@@ -272,8 +263,8 @@
                 <li>Tel. (844) 413-1313.</li>
               </ul>
             </div>
-            <div class="col-lg-6 ubicaciones">
-              <h4>CDMX</h4>
+            <div class="col-lg-6 col-md-6 col-sm-6 ubicaciones">
+              <h4 class="ciudad">CDMX</h4>
               <ul>
                 <li>Poniente 122 No. 705</li>
                 <li>Col. Industrial Vallejo</li>
@@ -284,10 +275,10 @@
               </ul>
             </div>
           </div>
-          <div class="row img-contacto"></div>
+          
         </div>
         <div class="col-lg-3">
-          <h3 class="contact-form-header">Contáctanos</h3>
+          <h3 class="contact-form-header contact-header">Contáctanos</h3>
           <div class="row form-box">
             <input
               class="form-input"
@@ -323,17 +314,17 @@
     </section>
 
     <footer>
-      <div class="row">
-        <div class=" col-lg-6">
+      <div class="row footer-1-row">
+        <div class=" col-lg-6 col-md-6 col-sm-12 footer-box">
           <ul class="footer-nav">
             <li><a href="#"> Inicio </a></li>
-            <li><a href="#"> Servicios</a></li>
-            <li><a href="#"> Cotizador</a></li>
-            <li><a href="#"> Contacto</a></li>
+            <li><a href="servicios/"> Servicios</a></li>
+            <li><a href="cotizador/"> Cotizador</a></li>
+            <li><a href="contacto/"> Contacto</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6 col-sm-12 social-box">
           <ul class="social-links">
             <li>
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -351,7 +342,7 @@
         <div class="col-lg-12">
           <h4 id="footer-ds">
             hecho con <i class="fas fa-heart ds-heart"></i> por
-            <a id="" href="www.digitalsides.com">digital sides</a>
+            <a id="" href="http://www.digitalsides.com" target="_blank">digital sides</a>
           </h4>
 
           <h4 class="footer-text">
