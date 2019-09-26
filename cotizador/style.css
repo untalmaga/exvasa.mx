@@ -169,3 +169,22 @@ textarea.touched:invalid {
 .modal-body .spinner {
   text-align: center;
 }
+
+.g-recaptcha div {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .form-row button {
+    width: 85%;
+  }
+  .resize-row {
+    max-width: 100%;
+  }
+  .resize-container {
+    padding: 0;
+  }
+  div#modal-footer button {
+    width: 45%;
+  }
+}
