@@ -62,8 +62,60 @@
           </ul>
         </div>
       </nav>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="successModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="successModallabel"
+        aria-hidden="true"
+        data-backdrop="static"
+        data-keyboard="false"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="spinner" id="spinner">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </div>
+              <div
+                class="message-container"
+                id="message-container"
+                style="display: none;"
+              >
+                <div class="icon-container text-center">
+                  <i class="far fa-check-circle"></i>
+                </div>
+                <h4>
+                  Tu cotización ha sido enviada, nos pondremos en contacto
+                  contigo.
+                </h4>
+              </div>
+            </div>
+            <div
+              class="modal-footer text-center"
+              id="modal-footer"
+              style="display: none;"
+            >
+              <a href=".">
+                <button type="button" class="btn btn-primary">
+                  Solicitar otra cotización
+                </button>
+              </a>
+              <a href="../index.html">
+                <button type="button" class="btn btn-primary">
+                  Ir a pagina principal
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-md-center" id="form-container">
         <div class="col-12 col-sm-10 col-lg-8">
           <h2 class="section-title">
             Cotiza tu orden
@@ -163,13 +215,24 @@
                 />
               </div>
               <div class="form-row">
-                <label for="description">Descripción</label>
+                <label for="description">Descripción del artículo</label>
                 <textarea
                   class="inputform"
                   id="description"
                   name="description"
                   required
                 ></textarea>
+              </div>
+
+              <div class="form-row">
+                <label for="package">Empaque</label>
+                <input
+                  type="text"
+                  id="package"
+                  name="package"
+                  class="inputform"
+                  required
+                />
               </div>
 
               <p>¿El árticulo cuenta con seguro?</p>
