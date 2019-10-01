@@ -26,11 +26,10 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <div class="container-fluid form-container">
+    <div class="container-fluid form-container resize-container">
       <nav class="navbar navbar-expand-lg ">
-        <a href="/"><img 
-            class="navbar-brand logo" 
-            src="../resources/img/IMG-0246.PNG"/>
+        <a href="/"
+          ><img class="navbar-brand logo" src="../resources/img/IMG-0246.PNG" />
         </a>
         <button
           class="navbar-toggler"
@@ -62,7 +61,7 @@
           </ul>
         </div>
       </nav>
-      <!-- Modal -->
+
       <div
         class="modal fade"
         id="successModal"
@@ -115,7 +114,7 @@
         </div>
       </div>
 
-      <div class="row justify-content-md-center" id="form-container">
+      <div class="row justify-content-md-center resize-row" id="form-container">
         <div class="col-12 col-sm-10 col-lg-8">
           <h2 class="section-title">
             Cotiza tu orden
@@ -153,7 +152,7 @@
               <div class="extra_pallet form-row" id="is_pallet">
                 <label for="pallets_number">Número de tarimas</label>
                 <input
-                  type="text"
+                  type="number"
                   name="pallets_number"
                   id="pallets_number"
                   class="inputform"
@@ -167,7 +166,7 @@
               >
                 <label for="parts_number">Número de piezas</label>
                 <input
-                  type="text"
+                  type="number"
                   name="parts_number"
                   id="parts_number"
                   class="inputform"
@@ -333,6 +332,7 @@
               <div
                 class="g-recaptcha"
                 data-sitekey="6LdawrMUAAAAAKvgLHFfTV56tTp_9DeaVgD6gDi-"
+                data-size="compact"
               ></div>
               <p id="captcha-fail" style="display:none;color:red;">
                 Please review the Captcha
