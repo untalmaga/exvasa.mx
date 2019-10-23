@@ -26,11 +26,10 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <div class="container-fluid form-container">
+    <div class="container-fluid form-container resize-container">
       <nav class="navbar navbar-expand-lg ">
-        <a href="/"><img 
-            class="navbar-brand logo" 
-            src="../resources/img/IMG-0246.PNG"/>
+        <a href="/"
+          ><img class="navbar-brand logo" src="../resources/img/IMG-0246.PNG" />
         </a>
         <button
           class="navbar-toggler"
@@ -63,7 +62,59 @@
         </div>
       </nav>
 
-      <div class="row justify-content-md-center">
+      <div
+        class="modal fade"
+        id="successModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="successModallabel"
+        aria-hidden="true"
+        data-backdrop="static"
+        data-keyboard="false"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="spinner" id="spinner">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </div>
+              <div
+                class="message-container"
+                id="message-container"
+                style="display: none;"
+              >
+                <div class="icon-container text-center">
+                  <i class="far fa-check-circle"></i>
+                </div>
+                <h4>
+                  Tu cotización ha sido enviada, nos pondremos en contacto
+                  contigo.
+                </h4>
+              </div>
+            </div>
+            <div
+              class="modal-footer text-center"
+              id="modal-footer"
+              style="display: none;"
+            >
+              <a href=".">
+                <button type="button" class="btn btn-primary">
+                  Solicitar otra cotización
+                </button>
+              </a>
+              <a href="../index.html">
+                <button type="button" class="btn btn-primary">
+                  Ir a pagina principal
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center resize-row" id="form-container">
         <div class="col-12 col-sm-10 col-lg-8">
           <h2 class="section-title">
             Cotiza tu orden
@@ -101,7 +152,7 @@
               <div class="extra_pallet form-row" id="is_pallet">
                 <label for="pallets_number">Número de tarimas</label>
                 <input
-                  type="text"
+                  type="number"
                   name="pallets_number"
                   id="pallets_number"
                   class="inputform"
@@ -115,7 +166,7 @@
               >
                 <label for="parts_number">Número de piezas</label>
                 <input
-                  type="text"
+                  type="number"
                   name="parts_number"
                   id="parts_number"
                   class="inputform"
@@ -163,13 +214,24 @@
                 />
               </div>
               <div class="form-row">
-                <label for="description">Descripción</label>
+                <label for="description">Descripción del artículo</label>
                 <textarea
                   class="inputform"
                   id="description"
                   name="description"
                   required
                 ></textarea>
+              </div>
+
+              <div class="form-row">
+                <label for="package">Empaque</label>
+                <input
+                  type="text"
+                  id="package"
+                  name="package"
+                  class="inputform"
+                  required
+                />
               </div>
 
               <p>¿El árticulo cuenta con seguro?</p>
@@ -269,7 +331,14 @@
               </div>
               <div
                 class="g-recaptcha"
+<<<<<<< HEAD
                 data-sitekey="6LcIKb8UAAAAAJ6d5TWa05Wgb8jIxyZyJq3VripX"
+=======
+
+                data-sitekey="6LcGJ78UAAAAAFy2ss-epj3fNaCtGKt0O8G7x5ib"
+                data-size="compact"
+
+>>>>>>> f53d062ba4b04219b84f3125f221a9413b83e15d
               ></div>
               <p id="captcha-fail" style="display:none;color:red;">
                 Please review the Captcha
