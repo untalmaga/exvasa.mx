@@ -25,6 +25,17 @@ body {
   flex: 1;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
 .extra_pallet,
 #description_fields,
 #collect-cp,
@@ -173,6 +184,122 @@ textarea.touched:invalid {
 .g-recaptcha div {
   margin: 0 auto;
 }
+
+/*--------------------------------------------- */
+/*                   FOOTER                     */
+/*--------------------------------------------- */
+
+footer {
+  background-color: #333;
+  padding: 40px;
+  font-size: 75%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 140%;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.fa-facebook-f:hover {
+  color: #3b5998;
+}
+.fa-twitter:hover {
+  color: #00aced;
+}
+.fa-instagram:hover {
+  color: #517fa4;
+}
+
+.fa-heart {
+  color: red;
+}
+
+#footer-ds a:visited,
+#footer-ds a:link {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.footer li a:link,
+.footer li a:visited {
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+.footer-nav li a:hover {
+  color: #204acf;
+  transition: color 0.6s;
+}
+
+#footer-ds a:hover {
+  color: #00aced;
+  transition: color 0.6s;
+}
+
+.footer-text {
+  font-size: 0.5rem;
+  color: #888;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#footer-ds {
+  font-family: "Dawning of a New Day", cursive;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ddd;
+  padding-bottom: 1rem;
+}
+
+.ds-heart {
+  color: #ed1944;
+}
+
 
 @media screen and (max-width: 480px) {
   .form-row button {
