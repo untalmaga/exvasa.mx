@@ -23,11 +23,12 @@
     />
     <link rel="stylesheet" href="../resources/styles.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resources/queries.css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <div class="container-fluid form-container resize-container">
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light">
         <a href="/"
           ><img class="navbar-brand logo" src="../resources/img/IMG-0246.PNG" />
         </a>
@@ -40,7 +41,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">   
+            <i class="fas fa-bars" style="color:#fff; font-size:24px;"></i>
+        </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
@@ -117,7 +120,7 @@
       <div class="row justify-content-md-center resize-row" id="form-container">
         <div class="col-12 col-sm-10 col-lg-8">
           <h2 class="section-title">
-            Cotiza tu orden
+            Cotizador de paquetería Ciudad de México - Saltillo
           </h2>
           <form
             id="form"
@@ -346,39 +349,42 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="row">
-        <div class="col-lg-6">
-          <ul class="footer-nav">
-            <li><a href="../"> Inicio </a></li>
-            <li><a href="../servicios/"> Servicios</a></li>
-            <li><a href="#"> Cotizador</a></li>
-            <li><a href="../contacto/"> Contacto</a></li>
-          </ul>
-        </div>
 
-        <div class="col-lg-6">
-          <ul class="social-links">
-            <li>
-              <a href="https://www.facebook.com/exvasa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            
-          </ul>
+    <footer>
+        <div class="row footer-1-row">
+          <div class=" col-lg-6 col-md-6 col-sm-12 footer-box">
+              <ul class="footer-nav">
+                  <li><a href="../"> Inicio </a></li>
+                  <li><a href="../servicios/"> Servicios</a></li>
+                  <li><a href="#"> Cotizador</a></li>
+                  <li><a href="../contacto/"> Contacto</a></li>
+              </ul>
+          </div>
+  
+          <div class="col-lg-6 col-md-6 col-sm-12 social-box">
+            <ul class="social-links">
+              <li>
+                <a href="https://www.facebook.com/exvasa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
             <h4 id="footer-ds">
               hecho con <i class="fas fa-heart ds-heart"></i> por
-              <a id="" href="www.digitalsides.com">digital sides</a>
+              <a id="" href="http://www.digitalsides.com" target="_blank">digital sides</a>
             </h4>
-
+  
             <h4 class="footer-text">
               Copyright &copy; 2019 Express Valle de Saltillo. S.A. de C.V.
             </h4>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    
+          
+        
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
