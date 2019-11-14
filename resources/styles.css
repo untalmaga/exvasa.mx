@@ -419,6 +419,10 @@ header {
 /*                  TESTIMONIOS                 */
 /*--------------------------------------------- */
 
+.texto-nuestros-clientes p {
+  font-size: 1.4rem;
+}
+
 #testimonials {
   text-align: center;
   background-color: #012b82;
@@ -436,7 +440,7 @@ header {
 }
 
 .carousel-item h2 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
