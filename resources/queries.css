@@ -248,6 +248,13 @@
     
     .social-links {padding-bottom: 15px;}
 
+    .cuadro-ubicaciones {
+        padding-bottom: 0;
+    }
+
+    .cd-extra {
+        padding-top: 0;
+    }
 
     .footer-nav { 
         display: table; 
