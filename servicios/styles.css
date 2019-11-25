@@ -277,7 +277,7 @@ input[type=submit]:active {
 /*--------------------------------------------- */
 
 #descripcion-servicios {
-    padding: 7% 0;
+    padding: 7% 0 0 0;
 }
 
 .texto-servicios {
