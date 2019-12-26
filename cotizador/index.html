@@ -23,6 +23,7 @@
     />
     <link rel="stylesheet" href="../resources/styles.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../resources/modal_style.css" />
     <link rel="stylesheet" href="resources/queries.css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
@@ -126,7 +127,7 @@
             id="form"
             class="my-form"
             method="POST"
-            action="https://mailapi.exvasa.now.sh/submit"
+            action="https://mailapi.rlopez0689.now.sh/submit"
             onsubmit="return false;"
           >
             <p>¿El articulo viaja en tarima?</p>
@@ -332,9 +333,14 @@
                   required
                 />
               </div>
+              <input
+                type="hidden"
+                name="template-name"
+                value="ExpressSaltilloEmailTemplate"
+              />
               <div
                 class="g-recaptcha"
-                data-sitekey="6LcIKb8UAAAAAJ6d5TWa05Wgb8jIxyZyJq3VripX"
+                data-sitekey="6LfKiLcUAAAAAIH0TUe1mBXQUhr4LF4STdEGh3N7"
                 data-size="compact"
               ></div>
               <p id="captcha-fail" style="display:none;color:red;">
@@ -398,5 +404,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="../resources/form_send.js"></script>
   </body>
 </html>

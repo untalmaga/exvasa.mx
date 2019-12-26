@@ -1,0 +1,29 @@
+.icon-container i {
+  font-size: 1100%;
+  color: #007f00;
+}
+
+.message-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.message-container h4 {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.modal-body .spinner {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  div#modal-footer button {
+    width: 45%;
+  }
+}
