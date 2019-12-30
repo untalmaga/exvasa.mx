@@ -875,3 +875,8 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+.navbar li a:hover,
+.navbar li a.active {
+  border-bottom: 2px solid #204acf;
+}

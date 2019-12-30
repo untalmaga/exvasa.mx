@@ -23,48 +23,106 @@
     />
     <link rel="stylesheet" href="resources/styles.css" />
     <link rel="stylesheet" href="resources/queries.css" />
+    <link rel="stylesheet" href="resources/modal_style.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successModallabel"
+      aria-hidden="true"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="spinner" id="spinner">
+              <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+            <div
+              class="message-container"
+              id="message-container"
+              style="display: none;"
+            >
+              <div class="icon-container text-center">
+                <i class="far fa-check-circle"></i>
+              </div>
+              <h4>
+                Tu mensaje ha sido enviado, nos pondremos en contacto contigo.
+              </h4>
+            </div>
+          </div>
+          <div
+            class="modal-footer text-center"
+            id="modal-footer"
+            style="display: none;"
+          >
+            <a href="/index.html#contact">
+              <button type="button" class="btn btn-primary">
+                Enviar otro mensaje
+              </button>
+            </a>
+            <a href="index.html">
+              <button type="button" class="btn btn-primary">
+                Ir a pagina principal
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- HERO IMAGE / VIDEO -->
     <section id="hero">
       <header>
-        
-          <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
-            <a href="/"> <img class="navbar-brand logo" src="resources/img/Logo-Blanco-Exvasa.png"/></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon">   
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+          <a href="/">
+            <img
+              class="navbar-brand logo"
+              src="resources/img/Logo-Blanco-Exvasa.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
               <i class="fas fa-bars" style="color:#fff; font-size:24px;"></i>
             </span>
-            </button>
+          </button>
 
-            <div class=" collapse sticky-top navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#"
-                    >Inicio <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="servicios">Servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="cotizador/">Cotizador</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        
+          <div
+            class=" collapse sticky-top navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"
+                  >Inicio <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cotizador/">Cotizador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <div class="hero-text-box">
           <h1>
@@ -72,10 +130,13 @@
             Excelencia en logística
           </h1>
           <div class="hero-buttons">
-            <a class="btn btn-full btn-header btn-header-1" href="contacto/"> Contáctanos </a>
-            <a class="btn btn-full btn-header btn-header-2" href="cotizador/"> Cotizador de paquetería </a>
+            <a class="btn btn-full btn-header btn-header-1" href="contacto/">
+              Contáctanos
+            </a>
+            <a class="btn btn-full btn-header btn-header-2" href="cotizador/">
+              Cotizador de paquetería
+            </a>
           </div>
-          
         </div>
       </header>
     </section>
@@ -88,20 +149,25 @@
         <span class="divider"></span>
         <div class="row about-us-row">
           <div class="col-lg-6 about-us-col about-us-col-1">
-            <img class="about-us-icon" src="resources/img/camion-about-us.png" />
+            <img
+              class="about-us-icon"
+              src="resources/img/camion-about-us.png"
+            />
           </div>
           <div class="col-lg-6  about-us-col about-us-col-2">
             <p class="about-us-text">
-              Express Valle de Saltillo nace en 1951, fundada por Ernesto Sánchez Valdés,
-              un empresario orgullosamente coahuilense quien era apasionado por la 
-              industria de la transportación y la logística.
+              Express Valle de Saltillo nace en 1951, fundada por Ernesto
+              Sánchez Valdés, un empresario orgullosamente coahuilense quien era
+              apasionado por la industria de la transportación y la logística.
               <br /><br />
-              Con más de 50 años de experiencia, EXVASA ha logrado posicionarse como una 
-              empresa caracterizada por brindar la excelencia a todos sus clientes a través 
-              de relaciones estratégicas y procesos de mejora continua. 
-              <br><br>
-              En la actualidad contamos con diversos servicios que nos permiten ser tu mejor 
-              aliado en logística que van desde el transporte de carga terrestre hasta transporte de personal
+              Con más de 50 años de experiencia, EXVASA ha logrado posicionarse
+              como una empresa caracterizada por brindar la excelencia a todos
+              sus clientes a través de relaciones estratégicas y procesos de
+              mejora continua.
+              <br /><br />
+              En la actualidad contamos con diversos servicios que nos permiten
+              ser tu mejor aliado en logística que van desde el transporte de
+              carga terrestre hasta transporte de personal
             </p>
           </div>
         </div>
@@ -110,40 +176,52 @@
 
     <section class="soluciones">
       <h2 class="section-title seccion-servicios">
-          Nuestros Servicios
+        Nuestros Servicios
       </h2>
       <span class="divider"></span>
       <ul class="soluciones-showcase clearfix">
         <li>
           <figure class="soluciones-img">
-            <a href="/servicios#transporte-dedicado"><img src="resources/img/Dedicados.png" /></a>
+            <a href="/servicios#transporte-dedicado"
+              ><img src="resources/img/Dedicados.png"
+            /></a>
           </figure>
         </li>
         <li>
           <figure class="soluciones-img">
-            <a href="/servicios#paqueteria"><img src="resources/img/Paqueteria.png" /></a>
+            <a href="/servicios#paqueteria"
+              ><img src="resources/img/Paqueteria.png"
+            /></a>
           </figure>
         </li>
         <li>
           <figure class="soluciones-img">
-            <a href="/servicios#personal"><img src="resources/img/personal.png" /></a>
+            <a href="/servicios#personal"
+              ><img src="resources/img/personal.png"
+            /></a>
           </figure>
         </li>
       </ul>
       <ul class="soluciones-showcase clearfix">
         <li>
           <figure class="soluciones-img">
-              <a href="/servicios#renta-remolques"><img src="resources/img/renta.png" /></a>
+            <a href="/servicios#renta-remolques"
+              ><img src="resources/img/renta.png"
+            /></a>
           </figure>
         </li>
         <li>
           <figure class="soluciones-img">
-            <a href="/servicios#almacenamiento"><img src="resources/img/Almacenamiento.png" /></a>
+            <a href="/servicios#almacenamiento"
+              ><img src="resources/img/Almacenamiento.png"
+            /></a>
           </figure>
         </li>
         <li>
           <figure class="soluciones-img">
-            <a href="/servicios#asesoramiento"><img src="resources/img/Asesoramiento.png" /></a>
+            <a href="/servicios#asesoramiento"
+              ><img src="resources/img/Asesoramiento.png"
+            /></a>
           </figure>
         </li>
       </ul>
@@ -156,9 +234,10 @@
         <div class="row">
           <div class="col-lg-12 texto-nuestros-clientes">
             <p>
-              En Express Valle de Saltillo contamos con experiencia en distintas 
-              industrias, brindando  servicio a socios comerciales que van desde 
-              el ramo manufacturero hasta la comercialización de producto terminado.
+              En Express Valle de Saltillo contamos con experiencia en distintas
+              industrias, brindando servicio a socios comerciales que van desde
+              el ramo manufacturero hasta la comercialización de producto
+              terminado.
             </p>
           </div>
         </div>
@@ -181,12 +260,16 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h2>
-              <i class="fas fa-quote-left"></i> El tiempo que he trabajado con Exvasa nos han apoyado en el cambio constante de puntos de recolección, 
-              entendiendo siempre que estos cambios son solicitados por la difícil situación que se vive en la zona. 
-              Esto genera tranquilidad al personal que recibe el servicio y a la empresa en general. Otro punto importante, 
-              es que siempre muestran apertura para recibir retroalimentación cuando esta es requerida, lo cual fortalece 
-              la relación comercial que se tiene. En general podría decir que el nivel de servicio y la atención a 
-              cliente brindada es siempre la adecuada.
+              <i class="fas fa-quote-left"></i> El tiempo que he trabajado con
+              Exvasa nos han apoyado en el cambio constante de puntos de
+              recolección, entendiendo siempre que estos cambios son solicitados
+              por la difícil situación que se vive en la zona. Esto genera
+              tranquilidad al personal que recibe el servicio y a la empresa en
+              general. Otro punto importante, es que siempre muestran apertura
+              para recibir retroalimentación cuando esta es requerida, lo cual
+              fortalece la relación comercial que se tiene. En general podría
+              decir que el nivel de servicio y la atención a cliente brindada es
+              siempre la adecuada.
             </h2>
             <img
               class="testimonial-img"
@@ -197,11 +280,15 @@
           </div>
           <div class="carousel-item">
             <h2>
-              <i class="fas fa-quote-left"></i> Actualmente las necesidades y requerimientos para el abasto de transporte cada vez son de más exigencia y 
-              sobre todo de mayor compromiso por parte de las líneas transportistas. Para Spiral  Logistics y Clogistics  
-              ha sido un complemento ideal para nuestra cadena de suministro el  trabajar con EXVASA , una línea de 
-              transporte altamente comprometida y eficiente para llevar a cabo la distribución de todos nuestros clientes 
-              dentro del territorio nacional, evitando incidencias y  costos adicionales para nuestra operación.
+              <i class="fas fa-quote-left"></i> Actualmente las necesidades y
+              requerimientos para el abasto de transporte cada vez son de más
+              exigencia y sobre todo de mayor compromiso por parte de las líneas
+              transportistas. Para Spiral  Logistics y Clogistics   ha sido un
+              complemento ideal para nuestra cadena de suministro el  trabajar
+              con EXVASA , una línea de transporte altamente comprometida y
+              eficiente para llevar a cabo la distribución de todos nuestros
+              clientes dentro del territorio nacional, evitando incidencias y
+               costos adicionales para nuestra operación.
             </h2>
             <img
               class="testimonial-img"
@@ -212,8 +299,10 @@
           </div>
           <div class="carousel-item">
             <h2>
-              <i class="fas fa-quote-left"></i> ¡Excelente servicio! EXVASA cuenta con un personal altamente capacitado para recolectar, transportar y 
-              entregar mercancía en buenas condiciones. Recomendamos su servicio, tienen muy buena atención.
+              <i class="fas fa-quote-left"></i> ¡Excelente servicio! EXVASA
+              cuenta con un personal altamente capacitado para recolectar,
+              transportar y entregar mercancía en buenas condiciones.
+              Recomendamos su servicio, tienen muy buena atención.
             </h2>
             <img
               class="testimonial-img"
@@ -224,10 +313,12 @@
           </div>
           <div class="carousel-item">
             <h2>
-              <i class="fas fa-quote-left"></i> Hemos trabajando con Express Valle de Saltillo por varios años por lo cual podemos dar nuestras mejores 
-              referencias en cuanto al trato y eficacia tanto de Oficina como de Operadores de transporte, personas 
-              honorables y amables siempre con la mejor disposición para brindarnos el mejor de los servicios. 
-              Calidad y servicio siempre al 100%. - 
+              <i class="fas fa-quote-left"></i> Hemos trabajando con Express
+              Valle de Saltillo por varios años por lo cual podemos dar nuestras
+              mejores referencias en cuanto al trato y eficacia tanto de Oficina
+              como de Operadores de transporte, personas honorables y amables
+              siempre con la mejor disposición para brindarnos el mejor de los
+              servicios. Calidad y servicio siempre al 100%. -
             </h2>
             <img
               class="testimonial-img"
@@ -265,7 +356,7 @@
         <div class="mapa col-lg-5 col-md-12">
           <iframe
             id="ubicacion1"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d640.630925914026!2d-100.91157975835006!3d25.435471954451053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880df2e1443d87%3A0xf0a00df66880a0e8!2sBlvrd.%20Convenciones%20201%2C%20Puerta%20del%20Oriente%2C%2025016%20Saltillo%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1570550021318!5m2!1ses-419!2smx" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d640.630925914026!2d-100.91157975835006!3d25.435471954451053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880df2e1443d87%3A0xf0a00df66880a0e8!2sBlvrd.%20Convenciones%20201%2C%20Puerta%20del%20Oriente%2C%2025016%20Saltillo%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1570550021318!5m2!1ses-419!2smx"
             width="100%"
             height="100%"
             frameborder="0"
@@ -309,40 +400,69 @@
               </ul>
             </div>
           </div>
-          
         </div>
         <div class="col-lg-3">
-          <h3 class="contact-form-header contact-header">Contáctanos</h3>
-          <div class="row form-box">
+          <form
+            id="form"
+            class="contact2-form validate-form"
+            method="POST"
+            action="https://mailapi.exvasa.now.sh/submit"
+            onsubmit="return false;"
+          >
+            <h3 id="contact" class="contact-form-header contact-header">
+              Contáctanos
+            </h3>
+            <div class="row form-box">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+            <div class="row form-box">
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Tu e-mail"
+                required
+              />
+            </div>
+            <div class="row form-box">
+              <textarea
+                class="form-input"
+                name="message"
+                placeholder="Tu Mensaje"
+                required
+              ></textarea>
+            </div>
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LcIKb8UAAAAAJ6d5TWa05Wgb8jIxyZyJq3VripX"
+              data-size="compact"
+            ></div>
+            <p
+              id="captcha-fail"
+              style="display:none;color:red; text-align: center;"
+            >
+              Please review the Captcha
+            </p>
+            <br />
             <input
-              class="form-input"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Tu nombre"
-              required
+              type="hidden"
+              name="template-name"
+              value="ExpressSaltilloEmailTemplateMessage"
             />
-          </div>
-          <div class="row form-box">
-            <input
-              class="form-input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Tu e-mail"
-              required
-            />
-          </div>
-          <div class="row form-box">
-            <textarea
-              class="form-input"
-              name="message"
-              placeholder="Tu Mensaje"
-            ></textarea>
-          </div>
-          <div class="row form-box">
-            <a class="btn btn-ghost btn-contact-us" href="#"> ENVIAR </a>
-          </div>
+            <div class="row form-box">
+              <button class="btn btn-ghost btn-contact-us" href="">
+                ENVIAR
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -361,7 +481,9 @@
         <div class="col-lg-6 col-md-6 col-sm-12 social-box">
           <ul class="social-links">
             <li>
-              <a href="https://www.facebook.com/exvasa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/exvasa/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -370,7 +492,9 @@
         <div class="col-lg-12">
           <h4 id="footer-ds">
             hecho con <i class="fas fa-heart ds-heart"></i> por
-            <a id="" href="http://www.digitalsides.com" target="_blank">digital sides</a>
+            <a id="" href="http://www.digitalsides.com" target="_blank"
+              >digital sides</a
+            >
           </h4>
 
           <h4 class="footer-text">
@@ -396,7 +520,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="resources/form_send.js"></script>
   </body>
 </html>
-
-
