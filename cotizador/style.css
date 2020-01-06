@@ -33,7 +33,10 @@ body {
   color: #fff;
 }
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
   color: #fff;
 }
 .extra_pallet,
@@ -41,26 +44,6 @@ body {
 #collect-cp,
 #deliver-cp {
   display: none;
-}
-
-.message-container {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 3px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.message-container h4 {
-  text-align: center;
-  margin-top: 5px;
-}
-
-.icon-container i {
-  font-size: 1100%;
-  color: #007f00;
 }
 
 .my-form {
@@ -175,10 +158,6 @@ textarea.touched:invalid {
 .justify-content-md-center {
   -ms-flex-pack: center !important;
   justify-content: center !important;
-}
-
-.modal-body .spinner {
-  text-align: center;
 }
 
 .g-recaptcha div {
@@ -300,7 +279,6 @@ footer {
   color: #ed1944;
 }
 
-
 @media screen and (max-width: 480px) {
   .form-row button {
     width: 85%;
@@ -310,8 +288,5 @@ footer {
   }
   .resize-container {
     padding: 0;
-  }
-  div#modal-footer button {
-    width: 45%;
   }
 }

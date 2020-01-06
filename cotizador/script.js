@@ -8,10 +8,6 @@ let radios_deliver = document.forms["form"].elements["deliver"];
 let description_fields = document.getElementById("description_fields");
 let inputs = document.getElementsByClassName("inputform");
 
-let modalFooter = document.getElementById("modal-footer");
-let spinner = document.getElementById("spinner");
-let messageContainer = document.getElementById("message-container");
-
 radios_pallet.forEach(element => {
   element.addEventListener("click", event => {
     if (event.target.id === "yes_pallet") {
@@ -59,35 +55,3 @@ for (i = 0; i < inputs.length; i++) {
     e.target.classList.add("touched");
   });
 }
-
-function ajaxPost(form, callback) {
-  let url = form.action;
-  let xhr = new XMLHttpRequest();
-  let params = [].filter
-    .call(form.elements, el => el.type != "radio" || el.checked == true)
-    .filter(el => !!el.name)
-    .filter(el => !el.disabled)
-    .filter(el => el.value)
-    .map(el => encodeURIComponent(el.name) + "=" + encodeURIComponent(el.value))
-    .join("&"); //Then join all the strings by &
-  xhr.open("POST", url);
-  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhr.onload = callback.bind(xhr);
-  xhr.send(params);
-}
-
-window.addEventListener("load", function() {
-  document.getElementById("form").addEventListener("submit", function(e) {
-    if (grecaptcha.getResponse() == "") {
-      document.getElementById("captcha-fail").style.display = "block";
-    } else {
-      $("#successModal").modal();
-      document.getElementById("captcha-fail").style.display = "none";
-      ajaxPost(this, res => {
-        spinner.style.display = "none";
-        modalFooter.style.display = "block";
-        messageContainer.style.display = "block";
-      });
-    }
-  });
-});
